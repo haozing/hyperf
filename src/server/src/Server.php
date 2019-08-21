@@ -112,7 +112,7 @@ class Server implements ServerInterface
             } else {
                 /** @var \Swoole\Server\Port $slaveServer */
                 $slaveServer = $this->server->addlistener($host, $port, $sockType);
-                $server->getSettings() && $slaveServer->set($server->getSettings());
+                $slaveServer->set($server->getSettings());
                 $this->registerSwooleEvents($slaveServer, $callbacks, $name);
                 ServerManager::add($name, [$type, $slaveServer]);
             }
