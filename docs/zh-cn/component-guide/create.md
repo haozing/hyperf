@@ -4,7 +4,7 @@
 
 ```
 # 创建适配 Hyperf 最新版本的组件包
-composer create-project hyperf/component-creator your_component dev-master
+composer create-project hyperf/component-creator your_component dev-main
 
 # 创建适配 Hyperf 2.0 版本的组件包
 composer create-project hyperf/component-creator your_component "2.0.*"
@@ -28,7 +28,7 @@ composer create-project hyperf/component-creator your_component "2.0.*"
 ```json
 {
     "require": {
-        "your_component/your_component": "dev-master"
+        "your_component/your_component": "dev-main"
     },
     "repositories": {
         "your_component": {
